@@ -9,14 +9,14 @@ function validerchoix() {
     var index = fruits.indexOf(f);
     for (let i = 0; i < n; i++) {
         if (f == fruits[i] && index > -1) { // comparer la valeur saisie au contenu de la matrice de départ.
-            document.write("ok" + "<br>");
+            document.write("ok! Voici la nouvelle lise des fruits disponible" + "<br>");
             var ok=1;
             fruits.splice(index, 1); //supprimer la valeur correspondente
             //delete fruits[i]; // supprimer la valeur correspondente
-            for (let i = 0; i < n; i++) { // afficher à nouveau la liste des fruits dispo.
+            for (let i = 0; i < n-1; i++) { // afficher à nouveau la liste des fruits dispo.
                 document.write(fruits[i] + "<br>")
             }
         }
-    }if(!ok) document.write("indispo");
+    }if(!ok) document.write("indisponible");
 }
 
