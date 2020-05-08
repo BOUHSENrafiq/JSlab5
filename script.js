@@ -9,7 +9,7 @@ function validerchoix() {
     var index = fruits.indexOf(f);
     for (let i = 0; i < n; i++) {
         if (f == fruits[i] && index > -1) { // comparer la valeur saisie au contenu de la matrice de départ.
-            document.write("ok! Voici la nouvelle lise des fruits disponible" + "<br>");
+            document.write("ok! Voici la nouvelle liste des fruits disponible" + "<br>");
             var ok=1;
             fruits.splice(index, 1); //supprimer la valeur correspondente
             //delete fruits[i]; // supprimer la valeur correspondente
