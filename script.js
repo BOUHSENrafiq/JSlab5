@@ -10,13 +10,16 @@ function validerchoix() {
     for (let i = 0; i < n; i++) {
         if (f == fruits[i] && index > -1) { // comparer la valeur saisie au contenu de la matrice de départ.
             document.write("ok! Voici la nouvelle liste des fruits disponibles:" + "<br>");
-            var ok=1;
+            var ok = 1;
             fruits.splice(index, 1); //supprimer la valeur correspondente
             //delete fruits[i]; // supprimer la valeur correspondente
-            for (let i = 0; i < n-1; i++) { // afficher à nouveau la liste des fruits disponibles.
+            for (let i = 0; i < n - 1; i++) { // afficher à nouveau la liste des fruits disponibles.
                 document.write(fruits[i] + "<br>")
             }
+        } else {
+            document.write("indisponible"); // afficher indisponile quand la valeur saisie ne correspant à aucaune valeur de la matrice de départ
+            break; // pour quitter la boucle for
         }
-    }if(!ok) document.write("indisponible");
+    }// if(!ok) document.write("indisponible");
 }
 
