@@ -1,19 +1,22 @@
-var fruits = ['Mangue', 'Raisin', 'Figue', 'Kiwi']; // matrice de départ
-for (let i = 0; i < fruits.length; i++) // boucle for pour parcourir tous les élements de la matrice du départ
-    document.write(fruits[i] + "<br>"); // Affichage de la liste ligne par ligne
+var fruits = ['Mangue', 'Raisin', 'Figue', 'Kiwi']; // matrice de départ.
+for (let i = 0; i < fruits.length; i++) // boucle for pour parcourir tous les élements de la matrice du départ.
+    document.write(fruits[i] + "<br>"); // Affichage de la liste ligne par ligne.
 
 function validerchoix() {
     var fruits = ['Mangue', 'Raisin', 'Figue', 'Kiwi']; // matrice de départ
-    var f = document.getElementById("fruits").value; // la valeur de la donné seaisie par l'utilisateur
+    var f = document.getElementById("fruits").value; // la valeur de la donné seaisie par l'utilisateur.
     var n = fruits.length; // nombre de valeur
+    var index = fruits.indexOf(f);
     for (let i = 0; i < n; i++) {
-        if (f == fruits[i]) { // comparer la valeur saisie au contenu de la matrice de départ
+        if (f == fruits[i] && index > -1) { // comparer la valeur saisie au contenu de la matrice de départ.
             document.write("ok" + "<br>");
             var ok=1;
-            delete fruits[i]; // supprimer la valeur correspondente
-            for (let i = 0; i < n; i++) {
+            fruits.splice(index, 1); //supprimer la valeur correspondente
+            //delete fruits[i]; // supprimer la valeur correspondente
+            for (let i = 0; i < n; i++) { // afficher à nouveau la liste des fruits dispo.
                 document.write(fruits[i] + "<br>")
             }
         }
     }if(!ok) document.write("indispo");
 }
+
