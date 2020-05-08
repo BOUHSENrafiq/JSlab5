@@ -16,10 +16,7 @@ function validerchoix() {
             for (let i = 0; i < n - 1; i++) { // afficher à nouveau la liste des fruits disponibles.
                 document.write(fruits[i] + "<br>")
             }
-        } else {
-            document.write("indisponible"); // afficher indisponile quand la valeur saisie ne correspant à aucaune valeur de la matrice de départ
-            break; // pour quitter la boucle for
         }
-    }// if(!ok) document.write("indisponible");
+    } if(!ok) document.write("indisponible"); // afficher indisponile quand la valeur saisie ne correspant à aucaune valeur de la matrice de départ
 }
 
