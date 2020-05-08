@@ -13,7 +13,7 @@ function validerchoix() {
             var ok=1;
             fruits.splice(index, 1); //supprimer la valeur correspondente
             //delete fruits[i]; // supprimer la valeur correspondente
-            for (let i = 0; i < n-1; i++) { // afficher à nouveau la liste des fruits dispo.
+            for (let i = 0; i < n-1; i++) { // afficher à nouveau la liste des fruits disponibles.
                 document.write(fruits[i] + "<br>")
             }
         }
