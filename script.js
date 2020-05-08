@@ -17,6 +17,6 @@ function validerchoix() {
                 document.write(fruits[i] + "<br>")
             }
         }
-    } if(!ok) document.write("indisponible"); // afficher indisponile quand la valeur saisie ne correspant à aucaune valeur de la matrice de départ
+    } if(!ok) document.write("indisponible"); // afficher indisponile quand la valeur saisie ne correspont à aucaune valeur de la matrice de départ
 }
 
